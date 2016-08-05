@@ -10,6 +10,8 @@
 		813EDCDF1D5508D10019B6C9 /* RxBattleNet.h in Headers */ = {isa = PBXBuildFile; fileRef = 813EDCDE1D5508D10019B6C9 /* RxBattleNet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		813EDCE61D5508D10019B6C9 /* RxBattleNet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813EDCDB1D5508D10019B6C9 /* RxBattleNet.framework */; };
 		813EDCEB1D5508D10019B6C9 /* RxBattleNetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDCEA1D5508D10019B6C9 /* RxBattleNetTests.swift */; };
+		813EDCFB1D550B270019B6C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813EDCFA1D550B270019B6C9 /* Alamofire.framework */; };
+		813EDCFD1D550B2F0019B6C9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813EDCFC1D550B2F0019B6C9 /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		813EDCE51D5508D10019B6C9 /* RxBattleNetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxBattleNetTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		813EDCEA1D5508D10019B6C9 /* RxBattleNetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxBattleNetTests.swift; sourceTree = "<group>"; };
 		813EDCEC1D5508D10019B6C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		813EDCFA1D550B270019B6C9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		813EDCFC1D550B2F0019B6C9 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813EDCFB1D550B270019B6C9 /* Alamofire.framework in Frameworks */,
+				813EDCFD1D550B2F0019B6C9 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,6 +61,7 @@
 			children = (
 				813EDCDD1D5508D10019B6C9 /* RxBattleNet */,
 				813EDCE91D5508D10019B6C9 /* RxBattleNetTests */,
+				813EDCF91D550B170019B6C9 /* Frameworks */,
 				813EDCDC1D5508D10019B6C9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,6 +91,15 @@
 				813EDCEC1D5508D10019B6C9 /* Info.plist */,
 			);
 			path = RxBattleNetTests;
+			sourceTree = "<group>";
+		};
+		813EDCF91D550B170019B6C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				813EDCFC1D550B2F0019B6C9 /* RxSwift.framework */,
+				813EDCFA1D550B270019B6C9 /* Alamofire.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +256,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -289,6 +306,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "${PROJECT_DIR}/Carthage/Build/iOS";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -310,6 +328,7 @@
 		813EDCF01D5508D10019B6C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -320,12 +339,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.if.RxBattleNet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		813EDCF11D5508D10019B6C9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -378,6 +399,7 @@
 				813EDCF11D5508D10019B6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		813EDCF21D5508D10019B6C9 /* Build configuration list for PBXNativeTarget "RxBattleNetTests" */ = {
 			isa = XCConfigurationList;
@@ -386,6 +408,7 @@
 				813EDCF41D5508D10019B6C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
