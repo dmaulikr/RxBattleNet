@@ -13,6 +13,15 @@
 		813EDCFB1D550B270019B6C9 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813EDCFA1D550B270019B6C9 /* Alamofire.framework */; };
 		813EDCFD1D550B2F0019B6C9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813EDCFC1D550B2F0019B6C9 /* RxSwift.framework */; };
 		813EDCFF1D551C810019B6C9 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 813EDCFE1D551C810019B6C9 /* SwiftyJSON.framework */; };
+		813EDD071D551F2C0019B6C9 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD061D551F2C0019B6C9 /* Region.swift */; };
+		813EDD091D5521790019B6C9 /* WoW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD081D5521790019B6C9 /* WoW.swift */; };
+		813EDD0B1D5521C10019B6C9 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD0A1D5521C10019B6C9 /* Method.swift */; };
+		813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD0D1D5524A80019B6C9 /* RxNetwork.swift */; };
+		813EDD101D5525460019B6C9 /* AlamofireNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD0F1D5525460019B6C9 /* AlamofireNetwork.swift */; };
+		813EDD121D5527B70019B6C9 /* RxWoW.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD111D5527B70019B6C9 /* RxWoW.swift */; };
+		813EDD141D5529410019B6C9 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD131D5529410019B6C9 /* Locale.swift */; };
+		813EDD171D552A2E0019B6C9 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD161D552A2E0019B6C9 /* RequestBuilder.swift */; };
+		813EDD191D552FA10019B6C9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD181D552FA10019B6C9 /* Error.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,15 @@
 		813EDCFA1D550B270019B6C9 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		813EDCFC1D550B2F0019B6C9 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		813EDCFE1D551C810019B6C9 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
+		813EDD061D551F2C0019B6C9 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		813EDD081D5521790019B6C9 /* WoW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WoW.swift; sourceTree = "<group>"; };
+		813EDD0A1D5521C10019B6C9 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
+		813EDD0D1D5524A80019B6C9 /* RxNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxNetwork.swift; sourceTree = "<group>"; };
+		813EDD0F1D5525460019B6C9 /* AlamofireNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireNetwork.swift; sourceTree = "<group>"; };
+		813EDD111D5527B70019B6C9 /* RxWoW.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RxWoW.swift; sourceTree = "<group>"; };
+		813EDD131D5529410019B6C9 /* Locale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
+		813EDD161D552A2E0019B6C9 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
+		813EDD181D552FA10019B6C9 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +99,9 @@
 		813EDCDD1D5508D10019B6C9 /* RxBattleNet */ = {
 			isa = PBXGroup;
 			children = (
+				813EDD0C1D55248E0019B6C9 /* Network */,
+				813EDD021D551EA30019B6C9 /* WoW */,
+				813EDD181D552FA10019B6C9 /* Error.swift */,
 				813EDCDE1D5508D10019B6C9 /* RxBattleNet.h */,
 				813EDCE01D5508D10019B6C9 /* Info.plist */,
 			);
@@ -104,6 +125,44 @@
 				813EDCFE1D551C810019B6C9 /* SwiftyJSON.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		813EDD021D551EA30019B6C9 /* WoW */ = {
+			isa = PBXGroup;
+			children = (
+				813EDD031D551EA30019B6C9 /* Model */,
+				813EDD151D552A160019B6C9 /* Network */,
+				813EDD081D5521790019B6C9 /* WoW.swift */,
+				813EDD111D5527B70019B6C9 /* RxWoW.swift */,
+			);
+			path = WoW;
+			sourceTree = "<group>";
+		};
+		813EDD031D551EA30019B6C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				813EDD061D551F2C0019B6C9 /* Region.swift */,
+				813EDD0A1D5521C10019B6C9 /* Method.swift */,
+				813EDD131D5529410019B6C9 /* Locale.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		813EDD0C1D55248E0019B6C9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				813EDD0D1D5524A80019B6C9 /* RxNetwork.swift */,
+				813EDD0F1D5525460019B6C9 /* AlamofireNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		813EDD151D552A160019B6C9 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				813EDD161D552A2E0019B6C9 /* RequestBuilder.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,6 +204,7 @@
 				813EDCE11D5508D10019B6C9 /* Sources */,
 				813EDCE21D5508D10019B6C9 /* Frameworks */,
 				813EDCE31D5508D10019B6C9 /* Resources */,
+				813EDD1A1D5530E50019B6C9 /* Copy Carthage frameworks */,
 			);
 			buildRules = (
 			);
@@ -209,11 +269,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		813EDD1A1D5530E50019B6C9 /* Copy Carthage frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftyJSON.framework",
+			);
+			name = "Copy Carthage frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		813EDCD61D5508D10019B6C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				813EDD071D551F2C0019B6C9 /* Region.swift in Sources */,
+				813EDD141D5529410019B6C9 /* Locale.swift in Sources */,
+				813EDD121D5527B70019B6C9 /* RxWoW.swift in Sources */,
+				813EDD101D5525460019B6C9 /* AlamofireNetwork.swift in Sources */,
+				813EDD091D5521790019B6C9 /* WoW.swift in Sources */,
+				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,
+				813EDD0B1D5521C10019B6C9 /* Method.swift in Sources */,
+				813EDD191D552FA10019B6C9 /* Error.swift in Sources */,
+				813EDD171D552A2E0019B6C9 /* RequestBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
