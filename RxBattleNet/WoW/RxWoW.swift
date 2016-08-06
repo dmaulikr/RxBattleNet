@@ -79,6 +79,15 @@ public struct RxWoW {
         return self.item(method: WoW.Method.Item(id: id))
     }
     
+    /**
+     * The item API provides detailed item set information.
+     *
+     * - Parameter id: Unique ID of the set being requested.
+     */
+    public func itemSet(id id: Int) -> Observable<WoW.ItemSet> {
+        return self.item(method: WoW.Method.ItemSet(id: id))
+    }
+    
     // MARK: - REALM STATUS API
     
     /**
