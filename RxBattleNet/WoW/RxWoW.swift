@@ -70,6 +70,15 @@ public struct RxWoW {
         return self.item(method: WoW.Method.Character(name: name, realm: realm, fields: fields))
     }
     
+    /**
+     * The item API provides detailed item information. This includes item set information if this item is part of a set.
+     *
+     * - Parameter id: Unique ID of the item being requested.
+     */
+    public func item(id id: Int) -> Observable<WoW.Item> {
+        return self.item(method: WoW.Method.Item(id: id))
+    }
+    
     // MARK: - REALM STATUS API
     
     /**
