@@ -26,6 +26,7 @@
 		813EDD201D555D740019B6C9 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD1F1D555D740019B6C9 /* Realm.swift */; };
 		81A96C471D55692B0096A170 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A96C461D55692B0096A170 /* Boss.swift */; };
 		81E4955A1D55E435000DA76D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E495591D55E435000DA76D /* Character.swift */; };
+		81E4955C1D55EC29000DA76D /* CharacterDatasets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		813EDD1F1D555D740019B6C9 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		81A96C461D55692B0096A170 /* Boss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
 		81E495591D55E435000DA76D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDatasets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,11 +153,12 @@
 			isa = PBXGroup;
 			children = (
 				81A96C461D55692B0096A170 /* Boss.swift */,
+				81E495591D55E435000DA76D /* Character.swift */,
+				81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */,
 				813EDD131D5529410019B6C9 /* Locale.swift */,
 				813EDD0A1D5521C10019B6C9 /* Method.swift */,
 				813EDD1F1D555D740019B6C9 /* Realm.swift */,
 				813EDD061D551F2C0019B6C9 /* Region.swift */,
-				81E495591D55E435000DA76D /* Character.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 				813EDD121D5527B70019B6C9 /* RxWoW.swift in Sources */,
 				813EDD201D555D740019B6C9 /* Realm.swift in Sources */,
 				813EDD101D5525460019B6C9 /* AlamofireNetwork.swift in Sources */,
+				81E4955C1D55EC29000DA76D /* CharacterDatasets.swift in Sources */,
 				813EDD091D5521790019B6C9 /* WoW.swift in Sources */,
 				813EDD1E1D555D370019B6C9 /* Model.swift in Sources */,
 				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,

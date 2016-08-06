@@ -50,6 +50,10 @@ public extension WoW {
         public let totalHonorableKills: Int
         public let thumbnail: String
         
+        public let achievements: WoW.Character.Achievements?
+        public let appearance: WoW.Character.Appearance?
+        public let guild: WoW.Character.Guild?
+        
         // MARK: - Init
         
         internal init(json: JSON) {
@@ -66,6 +70,10 @@ public extension WoW {
             self.calcClass = json["calcClass"].stringValue
             self.totalHonorableKills = json["totalHonorableKills"].intValue
             self.thumbnail = json["thumbnail"].stringValue
+            
+            self.achievements = json["achievements"].isExists() ? WoW.Character.Achievements(json: json["achievements"]) : nil
+            self.appearance = json["appearance"].isExists() ? WoW.Character.Appearance(json: json["appearance"]) : nil
+            self.guild = json["guild"].isExists() ? WoW.Character.Guild(json: json["guild"]) : nil
         }
         
     }
