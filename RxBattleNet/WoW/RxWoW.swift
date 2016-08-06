@@ -15,48 +15,52 @@ public struct RxWoW {
     // MARK: - Properties
     
     private let apiKey: String
+    private let region: WoW.Region
+    private let locale: WoW.Locale
     private let networkProvider: RxNetwork
     
     // MARK: - Init
     
-    public init(apiKey: String) {
-        self.init(apiKey: apiKey, networkProvider: AlamofireNetwork())
+    public init(apiKey: String, region: WoW.Region, locale: WoW.Locale) {
+        self.init(apiKey: apiKey, region: region, locale: locale, networkProvider: AlamofireNetwork())
     }
     
-    internal init(apiKey: String, networkProvider: RxNetwork) {
+    internal init(apiKey: String, region: WoW.Region, locale: WoW.Locale, networkProvider: RxNetwork) {
         self.apiKey = apiKey
+        self.region = region
+        self.locale = locale
         self.networkProvider = networkProvider
     }
     
     // MARK: - Public methods
     
-    public func bossMasterList(region region: WoW.Region, locale: WoW.Locale) -> Observable<[WoW.Boss]> {
-        return self.items(method: WoW.Method.BossMasterList, region: region, locale: locale)
+    public func bossMasterList() -> Observable<[WoW.Boss]> {
+        return self.items(method: WoW.Method.BossMasterList)
     }
     
-    public func boss(id id: Int, region: WoW.Region, locale: WoW.Locale) -> Observable<WoW.Boss> {
-        return self.item(method: WoW.Method.Boss(id: id), region: region, locale: locale)
+    public func boss(id id: Int) -> Observable<WoW.Boss> {
+        return self.item(method: WoW.Method.Boss(id: id))
     }
     
-    public func realmStatus(region region: WoW.Region, locale: WoW.Locale) -> Observable<[WoW.Realm]> {
-        return self.items(method: WoW.Method.RealmStatus, region: region, locale: locale)
+    public func realmStatus() -> Observable<[WoW.Realm]> {
+        return self.items(method: WoW.Method.RealmStatus)
     }
     
     // MARK: - Private methods
     
-    private func item<T: Model>(method method: WoW.Method, region: WoW.Region, locale: WoW.Locale) -> Observable<T> {
-        let request = WoW.RequestBuilder.request(method: method, region: region, locale: locale, apiKey: self.apiKey)
+    private func item<T: Model>(method method: WoW.Method) -> Observable<T> {
+        let request = WoW.RequestBuilder.request(method: method, region: self.region, locale: self.locale, apiKey: self.apiKey)
         return self.networkProvider
             .query(request: request)
             .map { T(json: $0) }
     }
     
-    private func items<T: Model>(method method: WoW.Method, region: WoW.Region, locale: WoW.Locale) -> Observable<[T]> {
+    private func items<T: Model>(method method: WoW.Method) -> Observable<[T]> {
         guard let collectionKey = method.collectionKey() else {
             return Observable.error(Error.NotCollection)
         }
 
-        let request = WoW.RequestBuilder.request(method: method, region: region, locale: locale, apiKey: self.apiKey)
+        let request = WoW.RequestBuilder.request(method: method, region: self.region, locale: self.locale, apiKey: self.apiKey)
         return self.networkProvider
             .query(request: request)
             .map { self.collection(json: $0, key: collectionKey) }
