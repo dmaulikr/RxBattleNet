@@ -21,6 +21,8 @@ public extension WoW {
         case GuildRewards
         case GuildPerks
         case GuildAchievements
+        case ItemClasses
+        case PetTypes
         
         internal func path() -> String {
             switch self {
@@ -36,6 +38,8 @@ public extension WoW {
             case .GuildRewards: return "/wow/data/guild/rewards"
             case .GuildPerks: return "/wow/data/guild/perks"
             case .GuildAchievements: return "/wow/data/guild/achievements"
+            case .ItemClasses: return "/wow/data/item/classes"
+            case .PetTypes: return "/wow/data/pet/types"
             }
         }
         
@@ -51,6 +55,8 @@ public extension WoW {
             case .GuildRewards: return "rewards"
             case .GuildPerks: return "perks"
             case .GuildAchievements: return "achievements"
+            case .ItemClasses: return "classes"
+            case .PetTypes: return "petTypes"
             
             default: return nil
             }

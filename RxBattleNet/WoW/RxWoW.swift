@@ -145,6 +145,20 @@ public struct RxWoW {
         return self.items(method: WoW.Method.GuildAchievements)
     }
     
+    /**
+     * The item classes data API provides a list of item classes
+     */
+    public func itemClasses() -> Observable<[WoW.ItemClass]> {
+        return self.items(method: WoW.Method.ItemClasses)
+    }
+    
+    /**
+     * The different bat pet types (including what they are strong and weak against)
+     */
+    public func petTypes() -> Observable<[WoW.PetType]> {
+        return self.items(method: WoW.Method.PetTypes)
+    }
+    
     // MARK: - Private methods
     
     private func item<T: Model>(method method: WoW.Method) -> Observable<T> {

@@ -33,6 +33,8 @@
 		81B077E21D56202100BD1903 /* GuildReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077E11D56202100BD1903 /* GuildReward.swift */; };
 		81B077E41D5621CC00BD1903 /* GuildPerk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077E31D5621CB00BD1903 /* GuildPerk.swift */; };
 		81B077E81D5626B600BD1903 /* AchievementCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077E71D5626B600BD1903 /* AchievementCategory.swift */; };
+		81B077EA1D562CEF00BD1903 /* ItemClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077E91D562CEF00BD1903 /* ItemClass.swift */; };
+		81B077EC1D562E6000BD1903 /* PetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077EB1D562E6000BD1903 /* PetType.swift */; };
 		81E4955A1D55E435000DA76D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E495591D55E435000DA76D /* Character.swift */; };
 		81E4955C1D55EC29000DA76D /* CharacterDatasets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,8 @@
 		81B077E11D56202100BD1903 /* GuildReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuildReward.swift; sourceTree = "<group>"; };
 		81B077E31D5621CB00BD1903 /* GuildPerk.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuildPerk.swift; sourceTree = "<group>"; };
 		81B077E71D5626B600BD1903 /* AchievementCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AchievementCategory.swift; sourceTree = "<group>"; };
+		81B077E91D562CEF00BD1903 /* ItemClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemClass.swift; sourceTree = "<group>"; };
+		81B077EB1D562E6000BD1903 /* PetType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetType.swift; sourceTree = "<group>"; };
 		81E495591D55E435000DA76D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDatasets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +183,8 @@
 				81B077D31D55FED400BD1903 /* CharacterRace.swift */,
 				81B077E31D5621CB00BD1903 /* GuildPerk.swift */,
 				81B077E11D56202100BD1903 /* GuildReward.swift */,
+				81B077E91D562CEF00BD1903 /* ItemClass.swift */,
+				81B077EB1D562E6000BD1903 /* PetType.swift */,
 				813EDD1F1D555D740019B6C9 /* Realm.swift */,
 			);
 			path = Model;
@@ -366,6 +372,8 @@
 				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,
 				81A96C471D55692B0096A170 /* Boss.swift in Sources */,
 				81B077D21D55FE1D00BD1903 /* Battlegroup.swift in Sources */,
+				81B077EA1D562CEF00BD1903 /* ItemClass.swift in Sources */,
+				81B077EC1D562E6000BD1903 /* PetType.swift in Sources */,
 				813EDD191D552FA10019B6C9 /* Error.swift in Sources */,
 				813EDD171D552A2E0019B6C9 /* RequestBuilder.swift in Sources */,
 				81B077DE1D5601FD00BD1903 /* Achievement.swift in Sources */,
