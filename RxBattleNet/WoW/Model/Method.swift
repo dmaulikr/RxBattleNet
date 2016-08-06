@@ -8,12 +8,24 @@
 
 public extension WoW {
     
-    public enum Method: String {
-        case RealmStatus = "/wow/realm/status"
+    public enum Method {
+        case BossMasterList
+        case Boss(id: Int)
+        case RealmStatus
+        
+        internal func path() -> String {
+            switch self {
+            case .BossMasterList: return "/wow/boss/"
+            case .Boss(let id): return "/wow/boss/\(id)"
+            case .RealmStatus: return "/wow/realm/status"
+            }
+        }
         
         internal func collectionKey() -> String? {
             switch self {
+            case .BossMasterList: return "bosses"
             case .RealmStatus: return "realms"
+            default: return nil
             }
         }
     }

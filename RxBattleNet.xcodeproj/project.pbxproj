@@ -24,6 +24,7 @@
 		813EDD191D552FA10019B6C9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD181D552FA10019B6C9 /* Error.swift */; };
 		813EDD1E1D555D370019B6C9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD1D1D555D370019B6C9 /* Model.swift */; };
 		813EDD201D555D740019B6C9 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD1F1D555D740019B6C9 /* Realm.swift */; };
+		81A96C471D55692B0096A170 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A96C461D55692B0096A170 /* Boss.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		813EDD181D552FA10019B6C9 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		813EDD1D1D555D370019B6C9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		813EDD1F1D555D740019B6C9 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
+		81A96C461D55692B0096A170 /* Boss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,10 +148,11 @@
 		813EDD031D551EA30019B6C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				81A96C461D55692B0096A170 /* Boss.swift */,
 				813EDD131D5529410019B6C9 /* Locale.swift */,
 				813EDD0A1D5521C10019B6C9 /* Method.swift */,
-				813EDD061D551F2C0019B6C9 /* Region.swift */,
 				813EDD1F1D555D740019B6C9 /* Realm.swift */,
+				813EDD061D551F2C0019B6C9 /* Region.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				813EDD091D5521790019B6C9 /* WoW.swift in Sources */,
 				813EDD1E1D555D370019B6C9 /* Model.swift in Sources */,
 				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,
+				81A96C471D55692B0096A170 /* Boss.swift in Sources */,
 				813EDD0B1D5521C10019B6C9 /* Method.swift in Sources */,
 				813EDD191D552FA10019B6C9 /* Error.swift in Sources */,
 				813EDD171D552A2E0019B6C9 /* RequestBuilder.swift in Sources */,

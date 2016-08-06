@@ -30,6 +30,14 @@ public struct RxWoW {
     
     // MARK: - Public methods
     
+    public func bossMasterList(region region: WoW.Region, locale: WoW.Locale) -> Observable<[WoW.Boss]> {
+        return self.items(method: WoW.Method.BossMasterList, region: region, locale: locale)
+    }
+    
+    public func boss(id id: Int, region: WoW.Region, locale: WoW.Locale) -> Observable<WoW.Boss> {
+        return self.item(method: WoW.Method.Boss(id: id), region: region, locale: locale)
+    }
+    
     public func realmStatus(region region: WoW.Region, locale: WoW.Locale) -> Observable<[WoW.Realm]> {
         return self.items(method: WoW.Method.RealmStatus, region: region, locale: locale)
     }

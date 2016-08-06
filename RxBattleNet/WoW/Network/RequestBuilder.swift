@@ -21,12 +21,12 @@ internal extension WoW {
             let components = NSURLComponents()
             components.scheme = Scheme
             components.host = region.rawValue
-            components.path = method.rawValue
+            components.path = method.path()
             
             var queryItems = [NSURLQueryItem]()
             
             switch method {
-            case .RealmStatus: break
+            default: break
             }
             
             queryItems += [
