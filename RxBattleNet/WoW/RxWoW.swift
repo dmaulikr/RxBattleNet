@@ -124,6 +124,27 @@ public struct RxWoW {
         return self.items(method: WoW.Method.CharacterAchievements)
     }
     
+    /**
+     * The guild rewards data API provides a list of all guild rewards.
+     */
+    public func guildRewards() -> Observable<[WoW.GuildReward]> {
+        return self.items(method: WoW.Method.GuildRewards)
+    }
+    
+    /**
+     * The guild perks data API provides a list of all guild perks.
+     */
+    public func guildPerks() -> Observable<[WoW.GuildPerk]> {
+        return self.items(method: WoW.Method.GuildPerks)
+    }
+    
+    /**
+     * The guild achievements data API provides a list of all of the achievements that guilds can earn as well as the category structure and hierarchy.
+     */
+    public func guildAchievements() -> Observable<[WoW.CharacterAchievement.Category]> {
+        return self.items(method: WoW.Method.GuildAchievements)
+    }
+    
     // MARK: - Private methods
     
     private func item<T: Model>(method method: WoW.Method) -> Observable<T> {
