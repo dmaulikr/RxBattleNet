@@ -10,6 +10,12 @@ public extension WoW {
     
     public enum Method: String {
         case RealmStatus = "/wow/realm/status"
+        
+        internal func collectionKey() -> String? {
+            switch self {
+            case .RealmStatus: return "realms"
+            }
+        }
     }
     
 }

@@ -10,9 +10,6 @@ import Foundation
 import RxSwift
 import SwiftyJSON
 
-private let KeyApiKey = "RxBattleNetApiKey"
-private let KeyNetworkProvider = "RxBattleNetNetworkProvider"
-
 public struct RxWoW {
     
     // MARK: - Properties
@@ -33,9 +30,33 @@ public struct RxWoW {
     
     // MARK: - Public methods
     
-    public func query(method method: WoW.Method, region: WoW.Region, locale: WoW.Locale) -> Observable<JSON> {
+    public func realmStatus(region region: WoW.Region, locale: WoW.Locale) -> Observable<[WoW.Realm]> {
+        return self.items(method: WoW.Method.RealmStatus, region: region, locale: locale)
+    }
+    
+    // MARK: - Private methods
+    
+    private func item<T: Model>(method method: WoW.Method, region: WoW.Region, locale: WoW.Locale) -> Observable<T> {
         let request = WoW.RequestBuilder.request(method: method, region: region, locale: locale, apiKey: self.apiKey)
-        return self.networkProvider.query(request: request)
+        return self.networkProvider
+            .query(request: request)
+            .map { T(json: $0) }
+    }
+    
+    private func items<T: Model>(method method: WoW.Method, region: WoW.Region, locale: WoW.Locale) -> Observable<[T]> {
+        guard let collectionKey = method.collectionKey() else {
+            return Observable.error(Error.NotCollection)
+        }
+
+        let request = WoW.RequestBuilder.request(method: method, region: region, locale: locale, apiKey: self.apiKey)
+        return self.networkProvider
+            .query(request: request)
+            .map { self.collection(json: $0, key: collectionKey) }
+    }
+    
+    
+    private func collection<T: Model>(json json: JSON, key: String) -> [T] {
+        return json[key].map { T(json: $1) }
     }
     
 }

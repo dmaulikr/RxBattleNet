@@ -22,6 +22,8 @@
 		813EDD141D5529410019B6C9 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD131D5529410019B6C9 /* Locale.swift */; };
 		813EDD171D552A2E0019B6C9 /* RequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD161D552A2E0019B6C9 /* RequestBuilder.swift */; };
 		813EDD191D552FA10019B6C9 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD181D552FA10019B6C9 /* Error.swift */; };
+		813EDD1E1D555D370019B6C9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD1D1D555D370019B6C9 /* Model.swift */; };
+		813EDD201D555D740019B6C9 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD1F1D555D740019B6C9 /* Realm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		813EDD131D5529410019B6C9 /* Locale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
 		813EDD161D552A2E0019B6C9 /* RequestBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestBuilder.swift; sourceTree = "<group>"; };
 		813EDD181D552FA10019B6C9 /* Error.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		813EDD1D1D555D370019B6C9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		813EDD1F1D555D740019B6C9 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				813EDD0C1D55248E0019B6C9 /* Network */,
 				813EDD021D551EA30019B6C9 /* WoW */,
 				813EDD181D552FA10019B6C9 /* Error.swift */,
+				813EDD1D1D555D370019B6C9 /* Model.swift */,
 				813EDCDE1D5508D10019B6C9 /* RxBattleNet.h */,
 				813EDCE01D5508D10019B6C9 /* Info.plist */,
 			);
@@ -141,9 +146,10 @@
 		813EDD031D551EA30019B6C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				813EDD061D551F2C0019B6C9 /* Region.swift */,
-				813EDD0A1D5521C10019B6C9 /* Method.swift */,
 				813EDD131D5529410019B6C9 /* Locale.swift */,
+				813EDD0A1D5521C10019B6C9 /* Method.swift */,
+				813EDD061D551F2C0019B6C9 /* Region.swift */,
+				813EDD1F1D555D740019B6C9 /* Realm.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -297,8 +303,10 @@
 				813EDD071D551F2C0019B6C9 /* Region.swift in Sources */,
 				813EDD141D5529410019B6C9 /* Locale.swift in Sources */,
 				813EDD121D5527B70019B6C9 /* RxWoW.swift in Sources */,
+				813EDD201D555D740019B6C9 /* Realm.swift in Sources */,
 				813EDD101D5525460019B6C9 /* AlamofireNetwork.swift in Sources */,
 				813EDD091D5521790019B6C9 /* WoW.swift in Sources */,
+				813EDD1E1D555D370019B6C9 /* Model.swift in Sources */,
 				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,
 				813EDD0B1D5521C10019B6C9 /* Method.swift in Sources */,
 				813EDD191D552FA10019B6C9 /* Error.swift in Sources */,
