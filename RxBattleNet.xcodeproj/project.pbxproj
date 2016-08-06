@@ -38,6 +38,8 @@
 		81B077EE1D562F5900BD1903 /* Spell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077ED1D562F5900BD1903 /* Spell.swift */; };
 		81B077F01D56314A00BD1903 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077EF1D56314A00BD1903 /* Item.swift */; };
 		81B077F21D567C0400BD1903 /* ItemSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077F11D567C0400BD1903 /* ItemSet.swift */; };
+		81B077F41D5682B700BD1903 /* AuctionDataStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077F31D5682B700BD1903 /* AuctionDataStatus.swift */; };
+		81B077F61D5683E200BD1903 /* AuctionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077F51D5683E200BD1903 /* AuctionData.swift */; };
 		81E4955A1D55E435000DA76D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E495591D55E435000DA76D /* Character.swift */; };
 		81E4955C1D55EC29000DA76D /* CharacterDatasets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */; };
 /* End PBXBuildFile section */
@@ -87,6 +89,8 @@
 		81B077ED1D562F5900BD1903 /* Spell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spell.swift; sourceTree = "<group>"; };
 		81B077EF1D56314A00BD1903 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		81B077F11D567C0400BD1903 /* ItemSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSet.swift; sourceTree = "<group>"; };
+		81B077F31D5682B700BD1903 /* AuctionDataStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionDataStatus.swift; sourceTree = "<group>"; };
+		81B077F51D5683E200BD1903 /* AuctionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionData.swift; sourceTree = "<group>"; };
 		81E495591D55E435000DA76D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDatasets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +184,8 @@
 			children = (
 				81B077DD1D5601FD00BD1903 /* Achievement.swift */,
 				81B077E71D5626B600BD1903 /* AchievementCategory.swift */,
+				81B077F51D5683E200BD1903 /* AuctionData.swift */,
+				81B077F31D5682B700BD1903 /* AuctionDataStatus.swift */,
 				81B077D11D55FE1D00BD1903 /* Battlegroup.swift */,
 				81A96C461D55692B0096A170 /* Boss.swift */,
 				81E495591D55E435000DA76D /* Character.swift */,
@@ -364,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81B077D41D55FED400BD1903 /* CharacterRace.swift in Sources */,
+				81B077F61D5683E200BD1903 /* AuctionData.swift in Sources */,
 				81B077DC1D5600EA00BD1903 /* Region.swift in Sources */,
 				81E4955A1D55E435000DA76D /* Character.swift in Sources */,
 				81B077D61D56008100BD1903 /* CharacterClass.swift in Sources */,
@@ -382,6 +389,7 @@
 				81B077EE1D562F5900BD1903 /* Spell.swift in Sources */,
 				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,
 				81A96C471D55692B0096A170 /* Boss.swift in Sources */,
+				81B077F41D5682B700BD1903 /* AuctionDataStatus.swift in Sources */,
 				81B077D21D55FE1D00BD1903 /* Battlegroup.swift in Sources */,
 				81B077EA1D562CEF00BD1903 /* ItemClass.swift in Sources */,
 				81B077F01D56314A00BD1903 /* Item.swift in Sources */,

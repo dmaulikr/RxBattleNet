@@ -10,6 +10,7 @@ public extension WoW {
     
     public enum Method {
         case Achievement(id: Int)
+        case AuctionDataStatus(realm: String)
         case BossMasterList
         case Boss(id: Int)
         case Character(name: String, realm: String, fields: [WoW.Character.Fields])
@@ -31,6 +32,7 @@ public extension WoW {
         internal func path() -> String {
             switch self {
             case .Achievement(let id): return "/wow/achievement/\(id)"
+            case .AuctionDataStatus(let realm): return "/wow/auction/data/\(realm)"
             case .BossMasterList: return "/wow/boss/"
             case .Boss(let id): return "/wow/boss/\(id)"
             case .Character(let name, let realm, _): return "/wow/character/\(realm)/\(name)"
@@ -53,6 +55,7 @@ public extension WoW {
         
         internal func collectionKey() -> String? {
             switch self {
+            case .AuctionDataStatus: return "files"
             case .BossMasterList: return "bosses"
             case .RealmStatus: return "realms"
             

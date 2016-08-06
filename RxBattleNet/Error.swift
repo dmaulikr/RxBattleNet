@@ -11,4 +11,5 @@ import Foundation
 public enum Error: ErrorType {
     case ApiKeyMissing
     case NotCollection
+    case InvalidURL
 }

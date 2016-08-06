@@ -50,6 +50,36 @@ public struct RxWoW {
         return self.item(method: WoW.Method.Achievement(id: id))
     }
     
+    // MARK: - AUCTION API
+    
+    /**
+     * Auction APIs currently provide rolling batches of data about current auctions. Fetching auction dumps is a two step process that involves checking a per-realm index file to determine if a recent dump has been generated and then fetching the most recently generated dump file if necessary.
+     *
+     * This API resource provides a per-realm list of recently generated auction house data dumps.
+     *
+     * - Parameter realm: The realm being requested.
+     */
+    public func auctionDataStatus(realm realm: String) -> Observable<[WoW.AuctionDataStatus]> {
+        return self.items(method: WoW.Method.AuctionDataStatus(realm: realm))
+    }
+    
+    /**
+     * Auction APIs currently provide rolling batches of data about current auctions. Fetching auction dumps is a two step process that involves checking a per-realm index file to determine if a recent dump has been generated and then fetching the most recently generated dump file if necessary.
+     *
+     * This API resource provides an auction house data dump.
+     *
+     * - Parameter status: The auction data status object retrieved via `auctionDataStatus(realm:)` API call.
+     */
+    public func auctionData(status status: WoW.AuctionDataStatus) -> Observable<WoW.AuctionData> {
+        guard let url = NSURL(string: status.url) else {
+            return Observable.error(Error.InvalidURL)
+        }
+        
+        return self.networkProvider
+            .query(request: NSURLRequest(URL: url))
+            .map { WoW.AuctionData(json: $0) }
+    }
+    
     // MARK: - BOSS API
     
     /**
@@ -91,7 +121,7 @@ public struct RxWoW {
     }
     
     /**
-     * The item API provides detailed item set information.
+     * The item set API provides detailed item set information.
      *
      * - Parameter id: Unique ID of the set being requested.
      */
