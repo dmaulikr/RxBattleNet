@@ -32,8 +32,8 @@ public extension WoW {
         public let title: String
         public let points: Int
         public let description: String
-        // WARNING: API returns full model, connect once model is available
-        public let rewardItems: [Int]
+        public let reward: String
+        public let rewardItems: [WoW.Item]
         public let icon: String
         public let accountWide: Bool
         public let factionId: Int
@@ -46,7 +46,8 @@ public extension WoW {
             self.title = json["title"].stringValue
             self.points = json["points"].intValue
             self.description = json["description"].stringValue
-            self.rewardItems = json["rewardItems"].map { $1["id"].intValue }
+            self.reward = json["reward"].stringValue
+            self.rewardItems = json["rewardItems"].map { WoW.Item(json: $1) }
             self.icon = json["icon"].stringValue
             self.accountWide = json["accountWide"].boolValue
             self.factionId = json["factionId"].intValue

@@ -9,6 +9,7 @@
 public extension WoW {
     
     public enum Method {
+        case Achievement(id: Int)
         case BossMasterList
         case Boss(id: Int)
         case Character(name: String, realm: String, fields: [WoW.Character.Fields])
@@ -29,6 +30,7 @@ public extension WoW {
         
         internal func path() -> String {
             switch self {
+            case .Achievement(let id): return "/wow/achievement/\(id)"
             case .BossMasterList: return "/wow/boss/"
             case .Boss(let id): return "/wow/boss/\(id)"
             case .Character(let name, let realm, _): return "/wow/character/\(realm)/\(name)"

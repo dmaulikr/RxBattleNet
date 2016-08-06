@@ -39,6 +39,17 @@ public struct RxWoW {
         self.networkProvider = networkProvider
     }
     
+    // MARK: - ACHIEVEMENT API
+    
+    /**
+     * This provides data about an individual achievement.
+     *
+     * - Parameter id: The ID of the achievement to retrieve.
+     */
+    public func achievement(id id: Int) -> Observable<WoW.Achievement> {
+        return self.item(method: WoW.Method.Achievement(id: id))
+    }
+    
     // MARK: - BOSS API
     
     /**
