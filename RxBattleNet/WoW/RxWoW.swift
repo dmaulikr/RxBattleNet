@@ -120,7 +120,7 @@ public struct RxWoW {
     /**
      * The character achievements data API provides a list of all of the achievements that characters can earn as well as the category structure and hierarchy.
      */
-    public func characterAchievements() -> Observable<[WoW.CharacterAchievement.Category]> {
+    public func characterAchievements() -> Observable<[WoW.AchievementCategory]> {
         return self.items(method: WoW.Method.CharacterAchievements)
     }
     
@@ -141,7 +141,7 @@ public struct RxWoW {
     /**
      * The guild achievements data API provides a list of all of the achievements that guilds can earn as well as the category structure and hierarchy.
      */
-    public func guildAchievements() -> Observable<[WoW.CharacterAchievement.Category]> {
+    public func guildAchievements() -> Observable<[WoW.AchievementCategory]> {
         return self.items(method: WoW.Method.GuildAchievements)
     }
     
