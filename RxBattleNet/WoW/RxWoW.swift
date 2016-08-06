@@ -34,6 +34,10 @@ public struct RxWoW {
     
     // MARK: - Public methods
     
+    public func battlegroups() -> Observable<[WoW.Battlegroup]> {
+        return self.items(method: WoW.Method.Battlegroups)
+    }
+    
     public func bossMasterList() -> Observable<[WoW.Boss]> {
         return self.items(method: WoW.Method.BossMasterList)
     }
@@ -44,6 +48,14 @@ public struct RxWoW {
     
     public func characterProfile(name name: String, realm: String, fields: [WoW.Character.Fields]) -> Observable<WoW.Character> {
         return self.item(method: WoW.Method.Character(name: name, realm: realm, fields: fields))
+    }
+    
+    public func characterRaces() -> Observable<[WoW.CharacterRace]> {
+        return self.items(method: WoW.Method.CharacterRaces)
+    }
+    
+    public func characterClasses() -> Observable<[WoW.CharacterClass]> {
+        return self.items(method: WoW.Method.CharacterClasses)
     }
     
     public func realmStatus() -> Observable<[WoW.Realm]> {
