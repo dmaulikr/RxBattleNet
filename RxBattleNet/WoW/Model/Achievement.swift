@@ -13,15 +13,10 @@ public extension WoW {
     public struct Achievement: Model {
         
         public struct Criteria: Model {
-            
-            // MARK: - Properties
-            
             public let id: Int
             public let description: String
             public let orderIndex: Int
             public let max: Int
-            
-            // MARK: - Init
             
             internal init(json: JSON) {
                 self.id = json["id"].intValue

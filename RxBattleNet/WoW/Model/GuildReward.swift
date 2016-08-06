@@ -16,17 +16,18 @@ public extension WoW {
         
         public let minGuildLevel: Int
         public let minGuildRepLevel: Int
+        public let races: [Int]
         public let achievement: WoW.Achievement
-        // WARNING: API returns full model, connect once model is available
-        public let item: Int
+        public let item: WoW.Item
         
         // MARK: - Init
         
         internal init(json: JSON) {
             self.minGuildLevel = json["minGuildLevel"].intValue
             self.minGuildRepLevel = json["minGuildRepLevel"].intValue
+            self.races = json["races"].map { $1.intValue }
             self.achievement = WoW.Achievement(json: json["achievement"])
-            self.item = json["item"]["id"].intValue
+            self.item = WoW.Item(json: json["item"])
         }
         
     }

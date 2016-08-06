@@ -13,33 +13,22 @@ public extension WoW {
     public struct Item: Model {
         
         public struct BonusStat: Model {
-            
-            // MARK: - Properties
-            
             public let stat: Int
             public let amount: Int
-            
-            // MARK: - Init
             
             internal init(json: JSON) {
                 self.stat = json["stat"].intValue
                 self.amount = json["amount"].intValue
             }
-            
         }
         
         public struct Spell: Model {
-            
-            // MARK: - Properties
-            
             public let spellId: Int
             public let spell: WoW.Spell
             public let nCharges: Int
             public let consumable: Bool
             public let categoryId: Int
             public let trigger: String
-            
-            // MARK: - Init
             
             internal init(json: JSON) {
                 self.spellId = json["spellId"].intValue
@@ -49,7 +38,6 @@ public extension WoW {
                 self.categoryId = json["categoryId"].intValue
                 self.trigger = json["trigger"].stringValue
             }
-            
         }
         
         public struct WeaponInfo: Model {
@@ -61,13 +49,9 @@ public extension WoW {
                 public let exactMax: Int
             }
             
-            // MARK: - Properties
-            
             public let damage: WoW.Item.WeaponInfo.Damage
             public let weaponSpeed: Double
             public let dps: Double
-            
-            // MARK: - Init
             
             internal init(json: JSON) {
                 let damageJson = json["damage"]
@@ -80,17 +64,11 @@ public extension WoW {
                 self.weaponSpeed = json["weaponSpeed"].doubleValue
                 self.dps = json["dps"].doubleValue
             }
-            
         }
         
         public struct Source: Model {
-            
-            // MARK: - Properties
-            
             public let id: Int
             public let type: String
-            
-            // MARK: - Init
             
             internal init(json: JSON) {
                 self.id = json["sourceId"].intValue
@@ -111,14 +89,9 @@ public extension WoW {
         }
         
         public struct BonusChance: Model {
-            
-            // MARK: - Properties
-            
             public let chanceType: String
             public let upgrade: WoW.Item.BonusUpgrade
             public let stats: [WoW.Item.BonusChanceStat]
-            
-            // MARK: - Init
             
             internal init(json: JSON) {
                 self.chanceType = json["chanceType"].stringValue
@@ -141,21 +114,15 @@ public extension WoW {
         }
         
         public struct BonusSummary: Model {
-            
-            // MARK: - Properties
-            
             public let defaultBonusLists: [Int]
             public let chanceBonusLists: [Int]
             public let bonusChances: [WoW.Item.BonusChance]
-            
-            // MARK: - Init
             
             internal init(json: JSON) {
                 self.defaultBonusLists = json["defaultBonusLists"].map { $1.intValue }
                 self.chanceBonusLists = json["chanceBonusLists"].map { $1.intValue }
                 self.bonusChances = json["bonusChances"].map { WoW.Item.BonusChance(json: $1) }
             }
-            
         }
         
         // MARK: - Properties
@@ -212,7 +179,8 @@ public extension WoW {
             self.icon = json["icon"].stringValue
             self.stackable = json["stackable"].intValue
             self.itemBind = json["itemBind"].intValue
-            self.bonusStats = json["bonusStats"].map { WoW.Item.BonusStat(json: $1) }
+            let statsJson = json["bonusStats"].isExists() ? json["bonusStats"] : json["stats"]
+            self.bonusStats = statsJson.map { WoW.Item.BonusStat(json: $1) }
             self.itemSpells = json["itemSpells"].map { WoW.Item.Spell(json: $1) }
             self.buyPrice = json["buyPrice"].intValue
             self.itemClass = json["itemClass"].intValue
