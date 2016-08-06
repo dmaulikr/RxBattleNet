@@ -36,7 +36,7 @@ public extension WoW {
         
         // MARK: - Init
         
-        public init(json: JSON) {
+        internal init(json: JSON) {
             self.id = json["id"].intValue
             self.name = json["name"].stringValue
             self.urlSlug = json["urlSlug"].stringValue

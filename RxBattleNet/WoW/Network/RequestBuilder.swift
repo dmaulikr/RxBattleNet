@@ -12,6 +12,7 @@ private let Scheme = "https"
 
 private let ParamLocale = "locale"
 private let ParamApiKey = "apikey"
+private let ParamFields = "fields"
 
 internal extension WoW {
     
@@ -26,6 +27,10 @@ internal extension WoW {
             var queryItems = [NSURLQueryItem]()
             
             switch method {
+            case .Character(_, _, let fields):
+                let value = fields.reduce("") { $0.isEmpty ? $1.rawValue : $0 + ",\($1.rawValue)" }
+                queryItems.append(NSURLQueryItem(name: ParamFields, value: value))
+                break
             default: break
             }
             

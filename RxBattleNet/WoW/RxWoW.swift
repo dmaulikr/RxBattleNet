@@ -42,6 +42,10 @@ public struct RxWoW {
         return self.item(method: WoW.Method.Boss(id: id))
     }
     
+    public func character(name name: String, realm: String, fields: [WoW.Character.Fields]) -> Observable<WoW.Character> {
+        return self.item(method: WoW.Method.Character(name: name, realm: realm, fields: fields))
+    }
+    
     public func realmStatus() -> Observable<[WoW.Realm]> {
         return self.items(method: WoW.Method.RealmStatus)
     }

@@ -8,6 +8,6 @@
 
 import SwiftyJSON
 
-public protocol Model {
+internal protocol Model {
     init(json: JSON)
 }

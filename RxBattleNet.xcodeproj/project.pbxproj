@@ -25,6 +25,7 @@
 		813EDD1E1D555D370019B6C9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD1D1D555D370019B6C9 /* Model.swift */; };
 		813EDD201D555D740019B6C9 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 813EDD1F1D555D740019B6C9 /* Realm.swift */; };
 		81A96C471D55692B0096A170 /* Boss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A96C461D55692B0096A170 /* Boss.swift */; };
+		81E4955A1D55E435000DA76D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E495591D55E435000DA76D /* Character.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		813EDD1D1D555D370019B6C9 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		813EDD1F1D555D740019B6C9 /* Realm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		81A96C461D55692B0096A170 /* Boss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Boss.swift; sourceTree = "<group>"; };
+		81E495591D55E435000DA76D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				813EDD0A1D5521C10019B6C9 /* Method.swift */,
 				813EDD1F1D555D740019B6C9 /* Realm.swift */,
 				813EDD061D551F2C0019B6C9 /* Region.swift */,
+				81E495591D55E435000DA76D /* Character.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81E4955A1D55E435000DA76D /* Character.swift in Sources */,
 				813EDD071D551F2C0019B6C9 /* Region.swift in Sources */,
 				813EDD141D5529410019B6C9 /* Locale.swift in Sources */,
 				813EDD121D5527B70019B6C9 /* RxWoW.swift in Sources */,
