@@ -15,14 +15,13 @@ public extension WoW {
         // MARK: - Properties
         
         public let guildLevel: Int
-        // WARNING: API returns full model, connect once model is available
-        public let spell: Int
+        public let spell: WoW.Spell
         
         // MARK: - Init
         
         internal init(json: JSON) {
             self.guildLevel = json["guildLevel"].intValue
-            self.spell = json["spell"]["id"].intValue
+            self.spell = WoW.Spell(json: json["spell"])
         }
         
     }

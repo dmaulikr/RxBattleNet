@@ -13,6 +13,7 @@ public extension WoW {
         case Boss(id: Int)
         case Character(name: String, realm: String, fields: [WoW.Character.Fields])
         case RealmStatus
+        case Spell(id: Int)
         
         case Battlegroups
         case CharacterRaces
@@ -30,6 +31,7 @@ public extension WoW {
             case .Boss(let id): return "/wow/boss/\(id)"
             case .Character(let name, let realm, _): return "/wow/character/\(realm)/\(name)"
             case .RealmStatus: return "/wow/realm/status"
+            case .Spell(let id): return "/wow/spell/\(id)"
 
             case .Battlegroups: return "/wow/data/battlegroups/"
             case .CharacterRaces: return "/wow/data/character/races"

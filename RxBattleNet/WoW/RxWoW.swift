@@ -94,6 +94,17 @@ public struct RxWoW {
         return self.items(method: WoW.Method.RealmStatus)
     }
     
+    // MARK: - SPELL API
+    
+    /**
+     * The spell API provides some information about spells.
+     *
+     * - Parameter id: The ID of the spell you want to retrieve.
+     */
+    public func spell(id id: Int) -> Observable<WoW.Spell> {
+        return self.item(method: WoW.Method.Spell(id: id))
+    }
+    
     // MARK: - DATA RESOURCES
     
     /**
