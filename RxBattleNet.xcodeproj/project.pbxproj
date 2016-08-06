@@ -29,6 +29,7 @@
 		81B077DB1D5600EA00BD1903 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077D81D5600EA00BD1903 /* Method.swift */; };
 		81B077DC1D5600EA00BD1903 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077D91D5600EA00BD1903 /* Region.swift */; };
 		81B077DE1D5601FD00BD1903 /* CharacterAchievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077DD1D5601FD00BD1903 /* CharacterAchievement.swift */; };
+		81B077E01D561EEF00BD1903 /* CharacterFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077DF1D561EEF00BD1903 /* CharacterFields.swift */; };
 		81E4955A1D55E435000DA76D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E495591D55E435000DA76D /* Character.swift */; };
 		81E4955C1D55EC29000DA76D /* CharacterDatasets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		81B077D81D5600EA00BD1903 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		81B077D91D5600EA00BD1903 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		81B077DD1D5601FD00BD1903 /* CharacterAchievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterAchievement.swift; sourceTree = "<group>"; };
+		81B077DF1D561EEF00BD1903 /* CharacterFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterFields.swift; sourceTree = "<group>"; };
 		81E495591D55E435000DA76D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDatasets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +168,7 @@
 				81B077DD1D5601FD00BD1903 /* CharacterAchievement.swift */,
 				81B077D51D56008100BD1903 /* CharacterClass.swift */,
 				81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */,
+				81B077DF1D561EEF00BD1903 /* CharacterFields.swift */,
 				81B077D31D55FED400BD1903 /* CharacterRace.swift */,
 				813EDD1F1D555D740019B6C9 /* Realm.swift */,
 			);
@@ -333,6 +336,7 @@
 				81B077DB1D5600EA00BD1903 /* Method.swift in Sources */,
 				813EDD091D5521790019B6C9 /* WoW.swift in Sources */,
 				813EDD1E1D555D370019B6C9 /* Model.swift in Sources */,
+				81B077E01D561EEF00BD1903 /* CharacterFields.swift in Sources */,
 				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,
 				81A96C471D55692B0096A170 /* Boss.swift in Sources */,
 				81B077D21D55FE1D00BD1903 /* Battlegroup.swift in Sources */,

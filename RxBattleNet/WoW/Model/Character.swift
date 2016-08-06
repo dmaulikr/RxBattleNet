@@ -12,28 +12,6 @@ public extension WoW {
     
     public struct Character: Model {
         
-        public enum Fields: String {
-            case Achievements = "achievements"
-            case Appearance = "appearance"
-            case Feed = "feed"
-            case Guild = "guild"
-            case HunterPets = "hunterPets"
-            case Items = "items"
-            case Mounts = "mounts"
-            case Pets = "pets"
-            case PetSlots = "petSlots"
-            case Professions = "professions"
-            case Progression = "progression"
-            case Pvp = "pvp"
-            case Quests = "quests"
-            case Reputation = "reputation"
-            case Statistics = "statistics"
-            case Stats = "stats"
-            case Talents = "talents"
-            case Titles = "titles"
-            case Audit = "audit"
-        }
-        
         // MARK: - Properties
         
         public let name: String
