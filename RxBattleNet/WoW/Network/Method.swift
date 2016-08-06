@@ -15,6 +15,7 @@ public extension WoW {
         case Character(name: String, realm: String, fields: [WoW.Character.Fields])
         case CharacterRaces
         case CharacterClasses
+        case CharacterAchievements
         case RealmStatus
         
         internal func path() -> String {
@@ -25,6 +26,7 @@ public extension WoW {
             case .Character(let name, let realm, _): return "/wow/character/\(realm)/\(name)"
             case .CharacterRaces: return "/wow/data/character/races"
             case .CharacterClasses: return "/wow/data/character/classes"
+            case .CharacterAchievements: return "/wow/data/character/achievements"
             case .RealmStatus: return "/wow/realm/status"
             }
         }
@@ -35,6 +37,7 @@ public extension WoW {
             case .BossMasterList: return "bosses"
             case .CharacterRaces: return "races"
             case .CharacterClasses: return "classes"
+            case .CharacterAchievements: return "achievements"
             case .RealmStatus: return "realms"
             default: return nil
             }

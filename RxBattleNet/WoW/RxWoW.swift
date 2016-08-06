@@ -58,6 +58,10 @@ public struct RxWoW {
         return self.items(method: WoW.Method.CharacterClasses)
     }
     
+    public func characterAchievements() -> Observable<[WoW.CharacterAchievement.Category]> {
+        return self.items(method: WoW.Method.CharacterAchievements)
+    }
+    
     public func realmStatus() -> Observable<[WoW.Realm]> {
         return self.items(method: WoW.Method.RealmStatus)
     }
