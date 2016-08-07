@@ -19,6 +19,9 @@ internal extension WoW {
         case Item(id: Int)
         case ItemSet(id: Int)
         case MountMasterList
+        case PetMasterList
+        case PetAbility(id: Int)
+        case PetSpecies(id: Int)
         case RealmStatus
         case Spell(id: Int)
         
@@ -44,6 +47,9 @@ internal extension WoW {
             case .Item(let id): return "/wow/item/\(id)"
             case .ItemSet(let id): return "/wow/item/set/\(id)"
             case .MountMasterList: return "/wow/mount/"
+            case .PetMasterList: return "/wow/pet/"
+            case .PetAbility(let id): return "/wow/pet/ability/\(id)"
+            case .PetSpecies(let id): return "/wow/pet/species/\(id)"
             case .RealmStatus: return "/wow/realm/status"
             case .Spell(let id): return "/wow/spell/\(id)"
 
@@ -66,6 +72,7 @@ internal extension WoW {
             case .Challenge: return "challenge"
             case .ChallengeRegion: return "challenge"
             case .MountMasterList: return "mounts"
+            case .PetMasterList: return "pets"
             case .RealmStatus: return "realms"
             
             case .Battlegroups: return "battlegroups"

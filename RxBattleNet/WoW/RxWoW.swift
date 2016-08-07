@@ -162,6 +162,31 @@ public struct RxWoW {
     
     // MARK: - PET API
     
+    /**
+     * A list of all supported battle and vanity pets.
+     */
+    public func petMasterList() -> Observable<[WoW.Pet]> {
+        return self.items(method: WoW.Method.PetMasterList)
+    }
+    
+    /**
+     * This provides data about a individual battle pet ability ID. We do not provide the tooltip for the ability yet. We are working on a better way to provide this since it depends on your pet's species, level and quality rolls.
+     *
+     * - Parameter id: The ID of the ability you want to retrieve.
+     */
+    public func petAbility(id id: Int) -> Observable<WoW.PetAbility> {
+        return self.item(method: WoW.Method.PetAbility(id: id))
+    }
+    
+    /**
+     * This provides the data about an individual pet species. The species IDs can be found your character profile using the options pets field. Each species also has data about what it's 6 abilities are.
+     *
+     * - Parameter id: The species you want to retrieve data on.
+     */
+    public func petSpecies(id id: Int) -> Observable<WoW.PetSpecies> {
+        return self.item(method: WoW.Method.PetSpecies(id: id))
+    }
+    
     // MARK: - PVP API
     
     // MARK: - QUEST API

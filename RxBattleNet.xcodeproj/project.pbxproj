@@ -45,6 +45,9 @@
 		81FFAFAA1D573FB9006CE567 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFA81D573FB9006CE567 /* Locale.swift */; };
 		81FFAFAB1D573FB9006CE567 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFA91D573FB9006CE567 /* Region.swift */; };
 		81FFAFAD1D57402A006CE567 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFAC1D57402A006CE567 /* URLBuilder.swift */; };
+		81FFAFAF1D574327006CE567 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFAE1D574327006CE567 /* Pet.swift */; };
+		81FFAFB11D574508006CE567 /* PetAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB01D574508006CE567 /* PetAbility.swift */; };
+		81FFAFB31D57460B006CE567 /* PetSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB21D57460B006CE567 /* PetSpecies.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +102,9 @@
 		81FFAFA81D573FB9006CE567 /* Locale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
 		81FFAFA91D573FB9006CE567 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		81FFAFAC1D57402A006CE567 /* URLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
+		81FFAFAE1D574327006CE567 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		81FFAFB01D574508006CE567 /* PetAbility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetAbility.swift; sourceTree = "<group>"; };
+		81FFAFB21D57460B006CE567 /* PetSpecies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetSpecies.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +212,9 @@
 				81B077E91D562CEF00BD1903 /* ItemClass.swift */,
 				81B077F11D567C0400BD1903 /* ItemSet.swift */,
 				81FFAFA61D573DB2006CE567 /* Mount.swift */,
+				81FFAFAE1D574327006CE567 /* Pet.swift */,
+				81FFAFB01D574508006CE567 /* PetAbility.swift */,
+				81FFAFB21D57460B006CE567 /* PetSpecies.swift */,
 				81B077EB1D562E6000BD1903 /* PetType.swift */,
 				813EDD1F1D555D740019B6C9 /* Realm.swift */,
 				81B077ED1D562F5900BD1903 /* Spell.swift */,
@@ -380,6 +389,7 @@
 			files = (
 				81B077D41D55FED400BD1903 /* CharacterRace.swift in Sources */,
 				81B077F61D5683E200BD1903 /* AuctionData.swift in Sources */,
+				81FFAFB11D574508006CE567 /* PetAbility.swift in Sources */,
 				81E4955A1D55E435000DA76D /* Character.swift in Sources */,
 				81FFAFAB1D573FB9006CE567 /* Region.swift in Sources */,
 				81B077D61D56008100BD1903 /* CharacterClass.swift in Sources */,
@@ -396,9 +406,11 @@
 				813EDD091D5521790019B6C9 /* WoW.swift in Sources */,
 				813EDD1E1D555D370019B6C9 /* Model.swift in Sources */,
 				81B077E01D561EEF00BD1903 /* CharacterFields.swift in Sources */,
+				81FFAFB31D57460B006CE567 /* PetSpecies.swift in Sources */,
 				81B077EE1D562F5900BD1903 /* Spell.swift in Sources */,
 				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,
 				81FFAFA51D572FE8006CE567 /* Challenge.swift in Sources */,
+				81FFAFAF1D574327006CE567 /* Pet.swift in Sources */,
 				81FFAFA71D573DB2006CE567 /* Mount.swift in Sources */,
 				81A96C471D55692B0096A170 /* Boss.swift in Sources */,
 				81B077F41D5682B700BD1903 /* AuctionDataStatus.swift in Sources */,
