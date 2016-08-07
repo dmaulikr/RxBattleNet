@@ -49,6 +49,7 @@
 		81FFAFB11D574508006CE567 /* PetAbility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB01D574508006CE567 /* PetAbility.swift */; };
 		81FFAFB31D57460B006CE567 /* PetSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB21D57460B006CE567 /* PetSpecies.swift */; };
 		81FFAFB51D5748D6006CE567 /* PetStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB41D5748D6006CE567 /* PetStats.swift */; };
+		81FFAFB71D574D1A006CE567 /* PvpRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB61D574D1A006CE567 /* PvpRanking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +108,7 @@
 		81FFAFB01D574508006CE567 /* PetAbility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetAbility.swift; sourceTree = "<group>"; };
 		81FFAFB21D57460B006CE567 /* PetSpecies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetSpecies.swift; sourceTree = "<group>"; };
 		81FFAFB41D5748D6006CE567 /* PetStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetStats.swift; sourceTree = "<group>"; };
+		81FFAFB61D574D1A006CE567 /* PvpRanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PvpRanking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -219,6 +221,7 @@
 				81FFAFB21D57460B006CE567 /* PetSpecies.swift */,
 				81FFAFB41D5748D6006CE567 /* PetStats.swift */,
 				81B077EB1D562E6000BD1903 /* PetType.swift */,
+				81FFAFB61D574D1A006CE567 /* PvpRanking.swift */,
 				813EDD1F1D555D740019B6C9 /* Realm.swift */,
 				81B077ED1D562F5900BD1903 /* Spell.swift */,
 			);
@@ -417,6 +420,7 @@
 				81FFAFA71D573DB2006CE567 /* Mount.swift in Sources */,
 				81A96C471D55692B0096A170 /* Boss.swift in Sources */,
 				81B077F41D5682B700BD1903 /* AuctionDataStatus.swift in Sources */,
+				81FFAFB71D574D1A006CE567 /* PvpRanking.swift in Sources */,
 				81B077D21D55FE1D00BD1903 /* Battlegroup.swift in Sources */,
 				81B077EA1D562CEF00BD1903 /* ItemClass.swift in Sources */,
 				81B077F01D56314A00BD1903 /* Item.swift in Sources */,

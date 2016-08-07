@@ -201,6 +201,15 @@ public struct RxWoW {
     
     // MARK: - PVP API
     
+    /**
+     * The Leaderboard API endpoint provides leaderboard information for the `2v2`, `3v3`, `5v5` and `Rated Battleground` leaderboards.
+     *
+     * - Parameter bracket: The type of leaderboard you want to retrieve.
+     */
+    public func pvpLeaderboards(bracket bracket: WoW.PvpBracket) -> Observable<[WoW.PvpRanking]> {
+        return self.items(method: WoW.Method.PvpLeaderboards(bracket: bracket))
+    }
+    
     // MARK: - QUEST API
     
     // MARK: - REALM STATUS API
