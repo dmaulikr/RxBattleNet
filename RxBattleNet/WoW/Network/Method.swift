@@ -18,6 +18,7 @@ public extension WoW {
         case Character(name: String, realm: String, fields: [WoW.Character.Fields])
         case Item(id: Int)
         case ItemSet(id: Int)
+        case MountMasterList
         case RealmStatus
         case Spell(id: Int)
         
@@ -42,6 +43,7 @@ public extension WoW {
             case .Character(let name, let realm, _): return "/wow/character/\(realm)/\(name)"
             case .Item(let id): return "/wow/item/\(id)"
             case .ItemSet(let id): return "/wow/item/set/\(id)"
+            case .MountMasterList: return "/wow/mount/"
             case .RealmStatus: return "/wow/realm/status"
             case .Spell(let id): return "/wow/spell/\(id)"
 
@@ -63,6 +65,7 @@ public extension WoW {
             case .BossMasterList: return "bosses"
             case .Challenge: return "challenge"
             case .ChallengeRegion: return "challenge"
+            case .MountMasterList: return "mounts"
             case .RealmStatus: return "realms"
             
             case .Battlegroups: return "battlegroups"

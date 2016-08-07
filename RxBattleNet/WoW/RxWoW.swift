@@ -129,6 +129,10 @@ public struct RxWoW {
         return self.item(method: WoW.Method.Character(name: name, realm: realm, fields: fields))
     }
     
+    // MARK: - GUILD PROFILE API
+    
+    // MARK: - ITEM API
+    
     /**
      * The item API provides detailed item information. This includes item set information if this item is part of a set.
      *
@@ -146,6 +150,21 @@ public struct RxWoW {
     public func itemSet(id id: Int) -> Observable<WoW.ItemSet> {
         return self.item(method: WoW.Method.ItemSet(id: id))
     }
+    
+    // MARK: - MOUNT API
+    
+    /**
+     * A list of all supported mounts.
+     */
+    public func mountMasterList() -> Observable<[WoW.Mount]> {
+        return self.items(method: WoW.Method.MountMasterList)
+    }
+    
+    // MARK: - PET API
+    
+    // MARK: - PVP API
+    
+    // MARK: - QUEST API
     
     // MARK: - REALM STATUS API
     
@@ -171,6 +190,8 @@ public struct RxWoW {
         return self.items(method: WoW.Method.RealmStatus)
     }
     
+    // MARK: - RECIPE API
+    
     // MARK: - SPELL API
     
     /**
@@ -181,6 +202,8 @@ public struct RxWoW {
     public func spell(id id: Int) -> Observable<WoW.Spell> {
         return self.item(method: WoW.Method.Spell(id: id))
     }
+    
+    // MARK: - ZONE API
     
     // MARK: - DATA RESOURCES
     
