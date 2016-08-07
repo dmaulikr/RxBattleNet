@@ -28,6 +28,8 @@ internal extension WoW {
         case RealmStatus
         case Recipe(id: Int)
         case Spell(id: Int)
+        case ZoneMasterList
+        case Zone(id: Int)
         
         case Battlegroups
         case CharacterRaces
@@ -61,6 +63,8 @@ internal extension WoW {
             case .RealmStatus: return "/wow/realm/status"
             case .Recipe(let id): return "/wow/recipe/\(id)"
             case .Spell(let id): return "/wow/spell/\(id)"
+            case .ZoneMasterList: return "/wow/zone/"
+            case .Zone(let id): return "/wow/zone/\(id)"
 
             case .Battlegroups: return "/wow/data/battlegroups/"
             case .CharacterRaces: return "/wow/data/character/races"
@@ -85,6 +89,7 @@ internal extension WoW {
             case .PetMasterList: return "pets"
             case .PvpLeaderboards: return "rows"
             case .RealmStatus: return "realms"
+            case .ZoneMasterList: return "zones"
             
             case .Battlegroups: return "battlegroups"
             case .CharacterRaces: return "races"

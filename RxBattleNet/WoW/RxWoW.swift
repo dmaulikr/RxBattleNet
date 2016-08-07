@@ -271,6 +271,22 @@ public struct RxWoW {
     
     // MARK: - ZONE API
     
+    /**
+     * A list of all supported zones and their bosses. A `zone` in this context should be considered a dungeon, or a raid, not a zone as in a world zone. A `boss` in this context should be considered a boss encounter, which may include more than one NPC.
+     */
+    public func zoneMasterList() -> Observable<[WoW.Zone]> {
+        return self.items(method: WoW.Method.ZoneMasterList)
+    }
+    
+    /**
+     * The Zone API provides some information about zones.
+     *
+     * - Parameter id: The ID of the zone you want to retrieve.
+     */
+    public func zone(id id: Int) -> Observable<WoW.Zone> {
+        return self.item(method: WoW.Method.Zone(id: id))
+    }
+    
     // MARK: - DATA RESOURCES
     
     /**

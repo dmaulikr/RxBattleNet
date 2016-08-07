@@ -53,6 +53,7 @@
 		81FFAFB91D574F2D006CE567 /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB81D574F2D006CE567 /* Quest.swift */; };
 		81FFAFBB1D575093006CE567 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFBA1D575093006CE567 /* Recipe.swift */; };
 		81FFAFBD1D5752C3006CE567 /* Talents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFBC1D5752C3006CE567 /* Talents.swift */; };
+		81FFAFBF1D575A5F006CE567 /* Zone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFBE1D575A5F006CE567 /* Zone.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,7 @@
 		81FFAFB81D574F2D006CE567 /* Quest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
 		81FFAFBA1D575093006CE567 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		81FFAFBC1D5752C3006CE567 /* Talents.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Talents.swift; sourceTree = "<group>"; };
+		81FFAFBE1D575A5F006CE567 /* Zone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zone.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +235,7 @@
 				81FFAFBA1D575093006CE567 /* Recipe.swift */,
 				81B077ED1D562F5900BD1903 /* Spell.swift */,
 				81FFAFBC1D5752C3006CE567 /* Talents.swift */,
+				81FFAFBE1D575A5F006CE567 /* Zone.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -424,6 +427,7 @@
 				813EDD1E1D555D370019B6C9 /* Model.swift in Sources */,
 				81B077E01D561EEF00BD1903 /* CharacterFields.swift in Sources */,
 				81FFAFB31D57460B006CE567 /* PetSpecies.swift in Sources */,
+				81FFAFBF1D575A5F006CE567 /* Zone.swift in Sources */,
 				81B077EE1D562F5900BD1903 /* Spell.swift in Sources */,
 				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,
 				81FFAFA51D572FE8006CE567 /* Challenge.swift in Sources */,
