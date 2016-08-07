@@ -13,6 +13,8 @@ public extension WoW {
         case AuctionDataStatus(realm: String)
         case BossMasterList
         case Boss(id: Int)
+        case Challenge(realm: String)
+        case ChallengeRegion
         case Character(name: String, realm: String, fields: [WoW.Character.Fields])
         case Item(id: Int)
         case ItemSet(id: Int)
@@ -35,6 +37,8 @@ public extension WoW {
             case .AuctionDataStatus(let realm): return "/wow/auction/data/\(realm)"
             case .BossMasterList: return "/wow/boss/"
             case .Boss(let id): return "/wow/boss/\(id)"
+            case .Challenge(let realm): return "/wow/challenge/\(realm)"
+            case .ChallengeRegion: return "/wow/challenge/region"
             case .Character(let name, let realm, _): return "/wow/character/\(realm)/\(name)"
             case .Item(let id): return "/wow/item/\(id)"
             case .ItemSet(let id): return "/wow/item/set/\(id)"
@@ -57,6 +61,8 @@ public extension WoW {
             switch self {
             case .AuctionDataStatus: return "files"
             case .BossMasterList: return "bosses"
+            case .Challenge: return "challenge"
+            case .ChallengeRegion: return "challenge"
             case .RealmStatus: return "realms"
             
             case .Battlegroups: return "battlegroups"

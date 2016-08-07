@@ -49,9 +49,24 @@ public extension WoW {
             self.totalHonorableKills = json["totalHonorableKills"].intValue
             self.thumbnail = json["thumbnail"].stringValue
             
-            self.achievements = json["achievements"].isExists() ? WoW.Character.Achievements(json: json["achievements"]) : nil
-            self.appearance = json["appearance"].isExists() ? WoW.Character.Appearance(json: json["appearance"]) : nil
-            self.guild = json["guild"].isExists() ? WoW.Character.Guild(json: json["guild"]) : nil
+            let achievementsJson = json["achievements"]
+            self.achievements = achievementsJson.isExists() ? WoW.Character.Achievements(json: achievementsJson) : nil
+            
+            let appearanceJson = json["appearance"]
+            self.appearance = appearanceJson.isExists() ? WoW.Character.Appearance(json: appearanceJson) : nil
+            
+            let guildJson = json["guild"]
+            if guildJson.type == .Dictionary {
+                self.guild = WoW.Character.Guild(json: guildJson)
+            } else if guildJson.type == .String {
+                let data = [
+                    "name": guildJson.stringValue,
+                    "realm": json["guildRealm"].stringValue
+                ]
+                self.guild = WoW.Character.Guild(json: JSON(data))
+            } else {
+                self.guild = nil
+            }
         }
         
     }

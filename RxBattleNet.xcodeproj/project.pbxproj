@@ -42,6 +42,7 @@
 		81B077F61D5683E200BD1903 /* AuctionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077F51D5683E200BD1903 /* AuctionData.swift */; };
 		81E4955A1D55E435000DA76D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E495591D55E435000DA76D /* Character.swift */; };
 		81E4955C1D55EC29000DA76D /* CharacterDatasets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */; };
+		81FFAFA51D572FE8006CE567 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFA41D572FE8006CE567 /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		81B077F51D5683E200BD1903 /* AuctionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionData.swift; sourceTree = "<group>"; };
 		81E495591D55E435000DA76D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDatasets.swift; sourceTree = "<group>"; };
+		81FFAFA41D572FE8006CE567 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 				81B077F31D5682B700BD1903 /* AuctionDataStatus.swift */,
 				81B077D11D55FE1D00BD1903 /* Battlegroup.swift */,
 				81A96C461D55692B0096A170 /* Boss.swift */,
+				81FFAFA41D572FE8006CE567 /* Challenge.swift */,
 				81E495591D55E435000DA76D /* Character.swift */,
 				81B077D51D56008100BD1903 /* CharacterClass.swift */,
 				81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */,
@@ -388,6 +391,7 @@
 				81B077E01D561EEF00BD1903 /* CharacterFields.swift in Sources */,
 				81B077EE1D562F5900BD1903 /* Spell.swift in Sources */,
 				813EDD0E1D5524A80019B6C9 /* RxNetwork.swift in Sources */,
+				81FFAFA51D572FE8006CE567 /* Challenge.swift in Sources */,
 				81A96C471D55692B0096A170 /* Boss.swift in Sources */,
 				81B077F41D5682B700BD1903 /* AuctionDataStatus.swift in Sources */,
 				81B077D21D55FE1D00BD1903 /* Battlegroup.swift in Sources */,

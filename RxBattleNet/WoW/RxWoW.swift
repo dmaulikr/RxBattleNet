@@ -98,6 +98,24 @@ public struct RxWoW {
         return self.item(method: WoW.Method.Boss(id: id))
     }
     
+    // MARK: - CHALLENGE MODE API
+    
+    /**
+     * The data in this request has data for all 9 challenge mode maps (currently). The map field includes the current medal times for each dungeon. Inside each ladder we provide data about each character that was part of each run. The character data includes the current cached spec of the character while the member field includes the spec of the character during the challenge mode run.
+     *
+     * - Parameter realm: The realm being requested.
+     */
+    public func challenge(realm realm: String) -> Observable<[WoW.Challenge]> {
+        return self.items(method: WoW.Method.Challenge(realm: realm))
+    }
+    
+    /**
+     * The region leaderboard has the exact same data format as the realm leaderboards except there is no realm field. It is simply the top 100 results gathered for each map for all of the available realm leaderboards in a region.
+     */
+    public func challenge() -> Observable<[WoW.Challenge]> {
+        return self.items(method: WoW.Method.ChallengeRegion)
+    }
+    
     // MARK: - CHARACTER PROFILE API
     
     /**
