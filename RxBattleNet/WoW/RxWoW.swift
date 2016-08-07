@@ -247,6 +247,15 @@ public struct RxWoW {
     
     // MARK: - RECIPE API
     
+    /**
+     * The recipe API provides basic recipe information.
+     *
+     * - Parameter id: Unique ID for the desired recipe.
+     */
+    public func recipe(id id: Int) -> Observable<WoW.Recipe> {
+        return self.item(method: WoW.Method.Recipe(id: id))
+    }
+    
     // MARK: - SPELL API
     
     /**

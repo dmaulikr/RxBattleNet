@@ -51,6 +51,7 @@
 		81FFAFB51D5748D6006CE567 /* PetStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB41D5748D6006CE567 /* PetStats.swift */; };
 		81FFAFB71D574D1A006CE567 /* PvpRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB61D574D1A006CE567 /* PvpRanking.swift */; };
 		81FFAFB91D574F2D006CE567 /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB81D574F2D006CE567 /* Quest.swift */; };
+		81FFAFBB1D575093006CE567 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFBA1D575093006CE567 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +112,7 @@
 		81FFAFB41D5748D6006CE567 /* PetStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetStats.swift; sourceTree = "<group>"; };
 		81FFAFB61D574D1A006CE567 /* PvpRanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PvpRanking.swift; sourceTree = "<group>"; };
 		81FFAFB81D574F2D006CE567 /* Quest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
+		81FFAFBA1D575093006CE567 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 				81FFAFB61D574D1A006CE567 /* PvpRanking.swift */,
 				81FFAFB81D574F2D006CE567 /* Quest.swift */,
 				813EDD1F1D555D740019B6C9 /* Realm.swift */,
+				81FFAFBA1D575093006CE567 /* Recipe.swift */,
 				81B077ED1D562F5900BD1903 /* Spell.swift */,
 			);
 			path = Model;
@@ -432,6 +435,7 @@
 				813EDD191D552FA10019B6C9 /* Error.swift in Sources */,
 				813EDD171D552A2E0019B6C9 /* RequestBuilder.swift in Sources */,
 				81FFAFB51D5748D6006CE567 /* PetStats.swift in Sources */,
+				81FFAFBB1D575093006CE567 /* Recipe.swift in Sources */,
 				81B077DE1D5601FD00BD1903 /* Achievement.swift in Sources */,
 				81B077E81D5626B600BD1903 /* AchievementCategory.swift in Sources */,
 			);

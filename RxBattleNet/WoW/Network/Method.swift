@@ -26,6 +26,7 @@ internal extension WoW {
         case PvpLeaderboards(bracket: WoW.PvpBracket)
         case Quest(id: Int)
         case RealmStatus
+        case Recipe(id: Int)
         case Spell(id: Int)
         
         case Battlegroups
@@ -57,6 +58,7 @@ internal extension WoW {
             case .PvpLeaderboards(let bracket): return "/wow/leaderboard/\(bracket.toString())"
             case .Quest(let id): return "/wow/quest/\(id)"
             case .RealmStatus: return "/wow/realm/status"
+            case .Recipe(let id): return "/wow/recipe/\(id)"
             case .Spell(let id): return "/wow/spell/\(id)"
 
             case .Battlegroups: return "/wow/data/battlegroups/"
