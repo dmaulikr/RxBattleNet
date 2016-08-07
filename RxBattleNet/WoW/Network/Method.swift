@@ -24,6 +24,7 @@ internal extension WoW {
         case PetSpecies(id: Int)
         case PetStats(speciesID: Int, level: Int?, breedId: Int?, qualityId: Int?)
         case PvpLeaderboards(bracket: WoW.PvpBracket)
+        case Quest(id: Int)
         case RealmStatus
         case Spell(id: Int)
         
@@ -54,6 +55,7 @@ internal extension WoW {
             case .PetSpecies(let id): return "/wow/pet/species/\(id)"
             case .PetStats(let speciesId, _, _, _): return "/wow/pet/stats/\(speciesId)"
             case .PvpLeaderboards(let bracket): return "/wow/leaderboard/\(bracket.toString())"
+            case .Quest(let id): return "/wow/quest/\(id)"
             case .RealmStatus: return "/wow/realm/status"
             case .Spell(let id): return "/wow/spell/\(id)"
 

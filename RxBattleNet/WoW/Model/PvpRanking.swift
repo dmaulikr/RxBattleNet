@@ -46,7 +46,6 @@ public extension WoW {
         public let weeklyLosses: Int
         public let weeklyWins: Int
         
-        
         // MARK: - Init
         
         internal init(json: JSON) {

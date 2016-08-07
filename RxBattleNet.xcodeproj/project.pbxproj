@@ -50,6 +50,7 @@
 		81FFAFB31D57460B006CE567 /* PetSpecies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB21D57460B006CE567 /* PetSpecies.swift */; };
 		81FFAFB51D5748D6006CE567 /* PetStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB41D5748D6006CE567 /* PetStats.swift */; };
 		81FFAFB71D574D1A006CE567 /* PvpRanking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB61D574D1A006CE567 /* PvpRanking.swift */; };
+		81FFAFB91D574F2D006CE567 /* Quest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFB81D574F2D006CE567 /* Quest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		81FFAFB21D57460B006CE567 /* PetSpecies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetSpecies.swift; sourceTree = "<group>"; };
 		81FFAFB41D5748D6006CE567 /* PetStats.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PetStats.swift; sourceTree = "<group>"; };
 		81FFAFB61D574D1A006CE567 /* PvpRanking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PvpRanking.swift; sourceTree = "<group>"; };
+		81FFAFB81D574F2D006CE567 /* Quest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Quest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 				81FFAFB41D5748D6006CE567 /* PetStats.swift */,
 				81B077EB1D562E6000BD1903 /* PetType.swift */,
 				81FFAFB61D574D1A006CE567 /* PvpRanking.swift */,
+				81FFAFB81D574F2D006CE567 /* Quest.swift */,
 				813EDD1F1D555D740019B6C9 /* Realm.swift */,
 				81B077ED1D562F5900BD1903 /* Spell.swift */,
 			);
@@ -395,6 +398,7 @@
 			files = (
 				81B077D41D55FED400BD1903 /* CharacterRace.swift in Sources */,
 				81B077F61D5683E200BD1903 /* AuctionData.swift in Sources */,
+				81FFAFB91D574F2D006CE567 /* Quest.swift in Sources */,
 				81FFAFB11D574508006CE567 /* PetAbility.swift in Sources */,
 				81E4955A1D55E435000DA76D /* Character.swift in Sources */,
 				81FFAFAB1D573FB9006CE567 /* Region.swift in Sources */,

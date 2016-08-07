@@ -212,6 +212,15 @@ public struct RxWoW {
     
     // MARK: - QUEST API
     
+    /**
+     * Retrieve metadata for a given quest.
+     *
+     * - Parameter id: The ID of the desired quest.
+     */
+    public func quest(id id: Int) -> Observable<WoW.Quest> {
+        return self.item(method: WoW.Method.Quest(id: id))
+    }
+    
     // MARK: - REALM STATUS API
     
     /**
