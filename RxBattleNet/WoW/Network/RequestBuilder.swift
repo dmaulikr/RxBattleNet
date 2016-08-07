@@ -8,7 +8,12 @@
 
 import Foundation
 
-private let ParamFields = "fields"
+private struct Params {
+    static let fields = "fields"
+    static let level = "level"
+    static let breedId = "breedId"
+    static let qualityId = "qualityId"
+}
 
 internal extension WoW {
     
@@ -20,8 +25,18 @@ internal extension WoW {
             switch method {
             case .Character(_, _, let fields):
                 let value = fields.reduce("") { $0.isEmpty ? $1.rawValue : $0 + ",\($1.rawValue)" }
-                components.queryItems?.append(NSURLQueryItem(name: ParamFields, value: value))
+                components.queryItems?.append(NSURLQueryItem(name: Params.fields, value: value))
                 break
+            case .PetStats(_, let level, let breedId, let qualityId):
+                if let level = level {
+                    components.queryItems?.append(NSURLQueryItem(name: Params.level, value: String(level)))
+                }
+                if let breedId = breedId {
+                    components.queryItems?.append(NSURLQueryItem(name: Params.breedId, value: String(breedId)))
+                }
+                if let qualityId = qualityId {
+                    components.queryItems?.append(NSURLQueryItem(name: Params.qualityId, value: String(qualityId)))
+                }
             default: break
             }
             

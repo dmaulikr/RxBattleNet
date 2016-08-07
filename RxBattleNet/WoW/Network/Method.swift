@@ -22,6 +22,7 @@ internal extension WoW {
         case PetMasterList
         case PetAbility(id: Int)
         case PetSpecies(id: Int)
+        case PetStats(speciesID: Int, level: Int?, breedId: Int?, qualityId: Int?)
         case RealmStatus
         case Spell(id: Int)
         
@@ -50,6 +51,7 @@ internal extension WoW {
             case .PetMasterList: return "/wow/pet/"
             case .PetAbility(let id): return "/wow/pet/ability/\(id)"
             case .PetSpecies(let id): return "/wow/pet/species/\(id)"
+            case .PetStats(let speciesId, _, _, _): return "/wow/pet/stats/\(speciesId)"
             case .RealmStatus: return "/wow/realm/status"
             case .Spell(let id): return "/wow/spell/\(id)"
 

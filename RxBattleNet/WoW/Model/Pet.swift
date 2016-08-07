@@ -11,26 +11,6 @@ import SwiftyJSON
 public extension WoW {
  
     public struct Pet: Model {
-        
-        public struct Stats: Model {
-            public let speciesId: Int
-            public let breedId: Int
-            public let petQualityId: Int
-            public let level: Int
-            public let health: Int
-            public let power: Int
-            public let speed: Int
-            
-            internal init(json: JSON) {
-                self.speciesId = json["speciesId"].intValue
-                self.breedId = json["breedId"].intValue
-                self.petQualityId = json["petQualityId"].intValue
-                self.level = json["level"].intValue
-                self.health = json["health"].intValue
-                self.power = json["power"].intValue
-                self.speed = json["speed"].intValue
-            }
-        }
  
         // MARK: - Properties
         
@@ -40,7 +20,7 @@ public extension WoW {
         public let family: String
         public let icon: String
         public let qualityId: Int
-        public let stats: WoW.Pet.Stats
+        public let stats: WoW.PetStats
         public let strongAgainst: [String]
         public let typeId: Int
         public let weakAgainst: [String]
@@ -54,7 +34,7 @@ public extension WoW {
             self.family = json["family"].stringValue
             self.icon = json["icon"].stringValue
             self.qualityId = json["qualityId"].intValue
-            self.stats = WoW.Pet.Stats(json: json["stats"])
+            self.stats = WoW.PetStats(json: json["stats"])
             self.strongAgainst = json["strongAgainst"].map { $1.stringValue }
             self.typeId = json["typeId"].intValue
             self.weakAgainst = json["weakAgainst"].map { $1.stringValue }

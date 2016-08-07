@@ -187,6 +187,18 @@ public struct RxWoW {
         return self.item(method: WoW.Method.PetSpecies(id: id))
     }
     
+    /**
+     * Retrieve detailed information about a given species of pet.
+     *
+     * - Parameter speciesId: The pet's species ID. This can be found by querying a users' list of pets via the Character Profile API.
+     * - Parameter level: The pet's level. Pet levels max out at 25. If omitted the API assumes a default value of 1.
+     * - Parameter breedId: The pet's breed. Retrievable via the Character Profile API. If omitted the API assumes a default value of 3.
+     * - Parameter qualityId: The pet's quality. Retrievable via the Character Profile API. Pet quality can range from 0 to 5 (0 is poor quality and 5 is legendary). If omitted the API will assume a default value of 1.
+     */
+    public func petStats(speciesId speciesId: Int, level: Int?, breedId: Int?, qualityId: Int?) -> Observable<WoW.PetStats> {
+        return self.item(method: WoW.Method.PetStats(speciesID: speciesId, level: level, breedId: breedId, qualityId: qualityId))
+    }
+    
     // MARK: - PVP API
     
     // MARK: - QUEST API
