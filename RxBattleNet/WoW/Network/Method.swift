@@ -6,9 +6,9 @@
 //  Copyright © 2016 Ivan Fabijanovic. All rights reserved.
 //
 
-public extension WoW {
+internal extension WoW {
     
-    public enum Method {
+    enum Method {
         case Achievement(id: Int)
         case AuctionDataStatus(realm: String)
         case BossMasterList
@@ -32,7 +32,7 @@ public extension WoW {
         case ItemClasses
         case PetTypes
         
-        internal func path() -> String {
+        func path() -> String {
             switch self {
             case .Achievement(let id): return "/wow/achievement/\(id)"
             case .AuctionDataStatus(let realm): return "/wow/auction/data/\(realm)"
@@ -59,7 +59,7 @@ public extension WoW {
             }
         }
         
-        internal func collectionKey() -> String? {
+        func collectionKey() -> String? {
             switch self {
             case .AuctionDataStatus: return "files"
             case .BossMasterList: return "bosses"

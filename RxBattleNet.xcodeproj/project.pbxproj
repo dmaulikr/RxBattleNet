@@ -25,9 +25,7 @@
 		81B077D21D55FE1D00BD1903 /* Battlegroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077D11D55FE1D00BD1903 /* Battlegroup.swift */; };
 		81B077D41D55FED400BD1903 /* CharacterRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077D31D55FED400BD1903 /* CharacterRace.swift */; };
 		81B077D61D56008100BD1903 /* CharacterClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077D51D56008100BD1903 /* CharacterClass.swift */; };
-		81B077DA1D5600EA00BD1903 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077D71D5600EA00BD1903 /* Locale.swift */; };
 		81B077DB1D5600EA00BD1903 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077D81D5600EA00BD1903 /* Method.swift */; };
-		81B077DC1D5600EA00BD1903 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077D91D5600EA00BD1903 /* Region.swift */; };
 		81B077DE1D5601FD00BD1903 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077DD1D5601FD00BD1903 /* Achievement.swift */; };
 		81B077E01D561EEF00BD1903 /* CharacterFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077DF1D561EEF00BD1903 /* CharacterFields.swift */; };
 		81B077E21D56202100BD1903 /* GuildReward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077E11D56202100BD1903 /* GuildReward.swift */; };
@@ -44,6 +42,9 @@
 		81E4955C1D55EC29000DA76D /* CharacterDatasets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */; };
 		81FFAFA51D572FE8006CE567 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFA41D572FE8006CE567 /* Challenge.swift */; };
 		81FFAFA71D573DB2006CE567 /* Mount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFA61D573DB2006CE567 /* Mount.swift */; };
+		81FFAFAA1D573FB9006CE567 /* Locale.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFA81D573FB9006CE567 /* Locale.swift */; };
+		81FFAFAB1D573FB9006CE567 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFA91D573FB9006CE567 /* Region.swift */; };
+		81FFAFAD1D57402A006CE567 /* URLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFAC1D57402A006CE567 /* URLBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,9 +79,7 @@
 		81B077D11D55FE1D00BD1903 /* Battlegroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battlegroup.swift; sourceTree = "<group>"; };
 		81B077D31D55FED400BD1903 /* CharacterRace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterRace.swift; sourceTree = "<group>"; };
 		81B077D51D56008100BD1903 /* CharacterClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterClass.swift; sourceTree = "<group>"; };
-		81B077D71D5600EA00BD1903 /* Locale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
 		81B077D81D5600EA00BD1903 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
-		81B077D91D5600EA00BD1903 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		81B077DD1D5601FD00BD1903 /* Achievement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
 		81B077DF1D561EEF00BD1903 /* CharacterFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterFields.swift; sourceTree = "<group>"; };
 		81B077E11D56202100BD1903 /* GuildReward.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuildReward.swift; sourceTree = "<group>"; };
@@ -97,6 +96,9 @@
 		81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDatasets.swift; sourceTree = "<group>"; };
 		81FFAFA41D572FE8006CE567 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 		81FFAFA61D573DB2006CE567 /* Mount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mount.swift; sourceTree = "<group>"; };
+		81FFAFA81D573FB9006CE567 /* Locale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Locale.swift; sourceTree = "<group>"; };
+		81FFAFA91D573FB9006CE567 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		81FFAFAC1D57402A006CE567 /* URLBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,8 +216,11 @@
 		813EDD0C1D55248E0019B6C9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				813EDD0D1D5524A80019B6C9 /* RxNetwork.swift */,
 				813EDD0F1D5525460019B6C9 /* AlamofireNetwork.swift */,
+				81FFAFA81D573FB9006CE567 /* Locale.swift */,
+				81FFAFA91D573FB9006CE567 /* Region.swift */,
+				813EDD0D1D5524A80019B6C9 /* RxNetwork.swift */,
+				81FFAFAC1D57402A006CE567 /* URLBuilder.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -223,9 +228,7 @@
 		813EDD151D552A160019B6C9 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				81B077D71D5600EA00BD1903 /* Locale.swift */,
 				81B077D81D5600EA00BD1903 /* Method.swift */,
-				81B077D91D5600EA00BD1903 /* Region.swift */,
 				813EDD161D552A2E0019B6C9 /* RequestBuilder.swift */,
 			);
 			path = Network;
@@ -377,14 +380,15 @@
 			files = (
 				81B077D41D55FED400BD1903 /* CharacterRace.swift in Sources */,
 				81B077F61D5683E200BD1903 /* AuctionData.swift in Sources */,
-				81B077DC1D5600EA00BD1903 /* Region.swift in Sources */,
 				81E4955A1D55E435000DA76D /* Character.swift in Sources */,
+				81FFAFAB1D573FB9006CE567 /* Region.swift in Sources */,
 				81B077D61D56008100BD1903 /* CharacterClass.swift in Sources */,
+				81FFAFAD1D57402A006CE567 /* URLBuilder.swift in Sources */,
 				813EDD121D5527B70019B6C9 /* RxWoW.swift in Sources */,
+				81FFAFAA1D573FB9006CE567 /* Locale.swift in Sources */,
 				813EDD201D555D740019B6C9 /* Realm.swift in Sources */,
 				81B077E41D5621CC00BD1903 /* GuildPerk.swift in Sources */,
 				81B077E21D56202100BD1903 /* GuildReward.swift in Sources */,
-				81B077DA1D5600EA00BD1903 /* Locale.swift in Sources */,
 				81B077F21D567C0400BD1903 /* ItemSet.swift in Sources */,
 				813EDD101D5525460019B6C9 /* AlamofireNetwork.swift in Sources */,
 				81E4955C1D55EC29000DA76D /* CharacterDatasets.swift in Sources */,

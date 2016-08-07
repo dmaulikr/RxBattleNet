@@ -13,6 +13,8 @@ public extension WoW {
         case KR = "kr.api.battle.net"
         case TW = "tw.api.battle.net"
         case US = "us.api.battle.net"
+        case CN = "api.battlenet.com.cn"
+        case SEA = "sea.api.battle.net"
     }
 
 }
