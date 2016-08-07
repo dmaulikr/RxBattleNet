@@ -129,6 +129,8 @@ public struct RxWoW {
         return self.item(method: WoW.Method.Character(name: name, realm: realm, fields: fields))
     }
     
+    // TODO: Feed, Hunter pets, items, mounts, pets, pet slots, professions, progression, pvp, quests, reputation, statistics, stats, talents, titles, audit
+    
     // MARK: - GUILD PROFILE API
     
     // MARK: - ITEM API
@@ -328,6 +330,13 @@ public struct RxWoW {
     }
     
     /**
+     * The talents data API provides a list of talents, specs and glyphs for each class.
+     */
+    public func talents() -> Observable<[WoW.Talents]> {
+        return self.items(method: WoW.Method.Talents)
+    }
+    
+    /**
      * The different bat pet types (including what they are strong and weak against)
      */
     public func petTypes() -> Observable<[WoW.PetType]> {
@@ -344,19 +353,19 @@ public struct RxWoW {
     }
     
     private func items<T: Model>(method method: WoW.Method) -> Observable<[T]> {
-        guard let collectionKey = method.collectionKey() else {
-            return Observable.error(Error.NotCollection)
-        }
-
         let request = WoW.RequestBuilder.request(method: method, region: self.region, locale: self.locale, apiKey: self.apiKey)
         return self.networkProvider
             .query(request: request)
-            .map { self.collection(json: $0, key: collectionKey) }
+            .map { self.collection(json: $0, key: method.collectionKey()) }
     }
     
     
-    private func collection<T: Model>(json json: JSON, key: String) -> [T] {
-        return json[key].map { T(json: $1) }
+    private func collection<T: Model>(json json: JSON, key: String?) -> [T] {
+        if let key = key {
+            return json[key].map { T(json: $1) }
+        }
+        
+        return json.map { T(json: $1) }
     }
     
 }

@@ -19,7 +19,10 @@ public extension WoW {
         public let subtext: String
         public let icon: String
         public let description: String
+        public let range: String
+        public let powerConst: String
         public let castTime: String
+        public let cooldown: String
         
         // MARK: - Init
         
@@ -29,7 +32,10 @@ public extension WoW {
             self.subtext = json["subtext"].stringValue
             self.icon = json["icon"].stringValue
             self.description = json["description"].stringValue
+            self.range = json["range"].stringValue
+            self.powerConst = json["powerConst"].stringValue
             self.castTime = json["castTime"].stringValue
+            self.cooldown = json["cooldown"].stringValue
         }
         
     }

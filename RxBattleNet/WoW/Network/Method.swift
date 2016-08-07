@@ -37,6 +37,7 @@ internal extension WoW {
         case GuildPerks
         case GuildAchievements
         case ItemClasses
+        case Talents
         case PetTypes
         
         func path() -> String {
@@ -69,6 +70,7 @@ internal extension WoW {
             case .GuildPerks: return "/wow/data/guild/perks"
             case .GuildAchievements: return "/wow/data/guild/achievements"
             case .ItemClasses: return "/wow/data/item/classes"
+            case .Talents: return "/wow/data/talents"
             case .PetTypes: return "/wow/data/pet/types"
             }
         }
