@@ -30,7 +30,7 @@ public extension WoW {
         
         public let achievements: WoW.Character.Achievements?
         public let appearance: WoW.Character.Appearance?
-        public let guild: WoW.Character.Guild?
+        public let guild: WoW.Guild?
         
         // MARK: - Init
         
@@ -57,13 +57,13 @@ public extension WoW {
             
             let guildJson = json["guild"]
             if guildJson.type == .Dictionary {
-                self.guild = WoW.Character.Guild(json: guildJson)
+                self.guild = WoW.Guild(json: guildJson)
             } else if guildJson.type == .String {
                 let data = [
                     "name": guildJson.stringValue,
                     "realm": json["guildRealm"].stringValue
                 ]
-                self.guild = WoW.Character.Guild(json: JSON(data))
+                self.guild = WoW.Guild(json: JSON(data))
             } else {
                 self.guild = nil
             }

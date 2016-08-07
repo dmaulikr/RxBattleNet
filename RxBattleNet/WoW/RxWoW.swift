@@ -133,6 +133,18 @@ public struct RxWoW {
     
     // MARK: - GUILD PROFILE API
     
+    /**
+     * The guild profile API is the primary way to access guild information. By default, a basic dataset will be returned and with each request and zero or more additional fields can be retrieved.
+     *
+     *
+     * - Parameter name: Name of the guild being queried
+     * - Parameter realm: The realm the guild lives on.
+     * - Parameter fields: The optional data you want to retrieve about the guild. Each field value is explained in more detail in the `WoW.Guild.Fields` enum documentation. If no fields are specified the API will only return basic data about the guild.
+     */
+    public func guildProfile(name name: String, realm: String, fields: [WoW.Guild.Fields]) -> Observable<WoW.Guild> {
+        return self.item(method: WoW.Method.Guild(name: name, realm: realm, fields: fields))
+    }
+    
     // MARK: - ITEM API
     
     /**

@@ -16,6 +16,7 @@ internal extension WoW {
         case Challenge(realm: String)
         case ChallengeRegion
         case Character(name: String, realm: String, fields: [WoW.Character.Fields])
+        case Guild(name: String, realm: String, fields: [WoW.Guild.Fields])
         case Item(id: Int)
         case ItemSet(id: Int)
         case MountMasterList
@@ -51,6 +52,7 @@ internal extension WoW {
             case .Challenge(let realm): return "/wow/challenge/\(realm)"
             case .ChallengeRegion: return "/wow/challenge/region"
             case .Character(let name, let realm, _): return "/wow/character/\(realm)/\(name)"
+            case .Guild(let name, let realm, _): return "/wow/guild/\(realm)/\(name)"
             case .Item(let id): return "/wow/item/\(id)"
             case .ItemSet(let id): return "/wow/item/set/\(id)"
             case .MountMasterList: return "/wow/mount/"

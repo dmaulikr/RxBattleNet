@@ -38,6 +38,8 @@
 		81B077F21D567C0400BD1903 /* ItemSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077F11D567C0400BD1903 /* ItemSet.swift */; };
 		81B077F41D5682B700BD1903 /* AuctionDataStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077F31D5682B700BD1903 /* AuctionDataStatus.swift */; };
 		81B077F61D5683E200BD1903 /* AuctionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B077F51D5683E200BD1903 /* AuctionData.swift */; };
+		81B71FFB1D578DAF00EB4DC6 /* Guild.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B71FFA1D578DAF00EB4DC6 /* Guild.swift */; };
+		81B71FFD1D578EF900EB4DC6 /* GuildFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B71FFC1D578EF900EB4DC6 /* GuildFields.swift */; };
 		81E4955A1D55E435000DA76D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E495591D55E435000DA76D /* Character.swift */; };
 		81E4955C1D55EC29000DA76D /* CharacterDatasets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */; };
 		81FFAFA51D572FE8006CE567 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FFAFA41D572FE8006CE567 /* Challenge.swift */; };
@@ -101,6 +103,8 @@
 		81B077F11D567C0400BD1903 /* ItemSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemSet.swift; sourceTree = "<group>"; };
 		81B077F31D5682B700BD1903 /* AuctionDataStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionDataStatus.swift; sourceTree = "<group>"; };
 		81B077F51D5683E200BD1903 /* AuctionData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuctionData.swift; sourceTree = "<group>"; };
+		81B71FFA1D578DAF00EB4DC6 /* Guild.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Guild.swift; sourceTree = "<group>"; };
+		81B71FFC1D578EF900EB4DC6 /* GuildFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuildFields.swift; sourceTree = "<group>"; };
 		81E495591D55E435000DA76D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterDatasets.swift; sourceTree = "<group>"; };
 		81FFAFA41D572FE8006CE567 /* Challenge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
@@ -218,6 +222,8 @@
 				81E4955B1D55EC29000DA76D /* CharacterDatasets.swift */,
 				81B077DF1D561EEF00BD1903 /* CharacterFields.swift */,
 				81B077D31D55FED400BD1903 /* CharacterRace.swift */,
+				81B71FFA1D578DAF00EB4DC6 /* Guild.swift */,
+				81B71FFC1D578EF900EB4DC6 /* GuildFields.swift */,
 				81B077E31D5621CB00BD1903 /* GuildPerk.swift */,
 				81B077E11D56202100BD1903 /* GuildReward.swift */,
 				81B077EF1D56314A00BD1903 /* Item.swift */,
@@ -436,6 +442,8 @@
 				81A96C471D55692B0096A170 /* Boss.swift in Sources */,
 				81B077F41D5682B700BD1903 /* AuctionDataStatus.swift in Sources */,
 				81FFAFB71D574D1A006CE567 /* PvpRanking.swift in Sources */,
+				81B71FFB1D578DAF00EB4DC6 /* Guild.swift in Sources */,
+				81B71FFD1D578EF900EB4DC6 /* GuildFields.swift in Sources */,
 				81B077D21D55FE1D00BD1903 /* Battlegroup.swift in Sources */,
 				81B077EA1D562CEF00BD1903 /* ItemClass.swift in Sources */,
 				81B077F01D56314A00BD1903 /* Item.swift in Sources */,
